@@ -1,0 +1,161 @@
+:root {
+   --mainTheme: rgb(25,146,212);
+}
+body {
+    display: flex;
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+}
+
+.sideDashboard {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    height: 100vh;
+    background-color: var(--mainTheme);
+    width: 350px;
+}
+.sideDashboard li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+#headerText {
+    font-size: 30px;
+}
+
+
+.topDashboard {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.sideDashboard .dashboardTextContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 25px;
+}
+
+#dashboard {
+    display: flex;
+    gap: 10px;
+}
+
+.topDashboard .topContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topDashboard .bottomContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topDashboard .topContainer .searchContainer {
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+.topDashboard .topContainer .notificationsContainer {
+    display: flex;
+    position: relative;
+    right: 30px;
+    align-items: center;
+    width: 20vh;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.topDashboard .bottomContainer .greetingContainer {
+    display: flex;
+    width: 33vh;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.topDashboard .bottomContainer .buttonContainer {
+    display: flex;
+    width: 330px;
+    justify-content: space-around;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainTheme);
+    color: white;
+    height: 36px;
+    width: 86px;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    transition: all .1s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   button:hover {
+    border: 1px solid white;
+   }
+   
+   button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+.topDashboard .bottomContainer .greetingContainer .greetingText {
+    font-size: 12px;
+    font-weight: bolder;
+}
+#smallIcon {
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#bigIcon {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#username {
+    font-size: 20px;
+    font-weight: bolder;
+}
+#search {
+    height: 30px;
+    width: 65%;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.151);
+    border-radius: 25px;
+    border: none;
+}
+
+#search:active {
+    border: 1px solid var(--mainTheme);
+    
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='script.js' defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sideDashboard">
+        <div class="dashboardTextContainer">
+            <ul>
+                <li id = "dashboard">
+                    <img src="icons/view-dashboard (1).png" alt="dashboard_icon" class="dashboard">
+                    <p id = "headerText">Dashboard</p>
+                </li>
+            </ul>
+        </div>
+        <div class="primaryLinks">
+            <ul>
+                <li>
+                    <img src="icons/home-variant-outline.png" alt="home_icon" class="icon">
+                    <p class="text">Home</p>
+                </li>
+                <li>
+                    <img src="icons/account-circle-outline.png" alt="account_icon" class="icon">
+                    <p class="text">Profile</p>
+                </li>
+                <li>
+                    <img src="icons/message-text-outline.png" alt="message_icon" class="icon">
+                    <p class="text">Messages</p>
+                </li>
+                <li>
+                    <img src="icons/history.png" alt="history_icon" class="icon">
+                    <p class="text">History</p>
+                </li>
+                <li>
+                    <img src="icons/checkbox-marked-circle-plus-outline.png" alt="" class="icon">
+                    <p class="text">Tasks</p>
+                </li>
+                <li>
+                    <img src="icons/account-group-outline.png" alt="communities_icon" class="icon_seperator">
+                    <p class="text">Communities</p>
+                </li>
+            </ul>
+            <div class="secondaryLinks"></div>
+                <ul>
+                    <li>
+                    <img src="icons/cog-outline.png" alt="settings_icon" class="icon">
+                    <p class="text">Settings</p>
+                </li>
+                    <li>
+                    <img src="icons/lifebuoy.png" alt="support_icon" class="icon">
+                    <p class="text">Support</p>
+                </li>
+                    <li>
+                    <img src="icons/eye-off-outline.png" alt="privacy_icon" class="icon">
+                    <p class="text">Privacy</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topDashboard">
+        <div class="topContainer">
+            <div class="searchContainer">
+            <img src="icons/magnify.png" alt = "search_icon" class = "top_icon">
+            <input type="search" id = "search" placeholder=" Search here">
+        </div>
+            <div class="notificationsContainer">
+            <img src="icons/bell-outline.png" alt="notification_icon" class="top_icon">
+            <img src="icons/avatar-boy-male-3-svgrepo-com.svg" alt="user_icon" id = "bigIcon">
+            <p class="userName">Christos Binos</p>
+            </div>
+        </div>
+
+        <div class="bottomContainer">
+            <div class="greetingContainer">
+            <img src="icons/avatar-boy-male-3-svgrepo-com.svg" alt="user_icon" id = "smallIcon">
+            <div class="greetingText">
+            <p class="greeting">Hi there,</p>
+            <p id ="username">Christos (@Christophrenic)</p>
+        </div>
+        </div>
+            <div class="buttonContainer">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+            </div>
+         </div>
+</body>
+</html>
