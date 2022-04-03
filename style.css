@@ -4,16 +4,23 @@
 body {
     display: flex;
     margin: 0;
+    padding: 0;
+    background-color: rgb(226,232,240);
     font-family:'Roboto', sans-serif;
 }
 
+.mainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .sideDashboard {
     color: white;
     font-size: 24px;
     font-weight: 800;
     height: 100vh;
     background-color: var(--mainTheme);
-    width: 350px;
+    min-width: 250px;
 }
 .sideDashboard li {
     list-style: none;
@@ -32,7 +39,7 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    background-color: white;
     height: 150px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -158,4 +165,53 @@ li:hover {
     cursor: pointer;
     text-decoration: underline;
     
+}
+
+.cardsGrid { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 30px;
+    gap: 30px;
+    width: 400px;
+}
+
+.cardsGrid .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 30px;
+    height: 180px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+#iconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.sidePanel {
+    position: absolute;
+    right: 300px;
+    top: 230px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.sidePanel .announcementContainer {
+    width: 300px;
+    height: 100%;
+}
+#border {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
 }
